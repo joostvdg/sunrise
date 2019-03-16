@@ -1,6 +1,6 @@
 package com.github.joostvdg.sunrise.service;
 
-import net.kearos.demomon.micronaut.graal.model.Conference;
+import com.github.joostvdg.sunrise.model.Conference;
 
 import javax.inject.Singleton;
 import java.util.Arrays;

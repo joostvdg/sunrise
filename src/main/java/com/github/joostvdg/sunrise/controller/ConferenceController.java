@@ -3,8 +3,8 @@ package com.github.joostvdg.sunrise.controller;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.tracing.annotation.ContinueSpan;
-import net.kearos.demomon.micronaut.graal.model.Conference;
-import net.kearos.demomon.micronaut.graal.service.ConferenceService;
+import com.github.joostvdg.sunrise.model.Conference;
+import com.github.joostvdg.sunrise.service.ConferenceService;
 
 @Controller("/conferences")
 public class ConferenceController {

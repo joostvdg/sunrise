@@ -1,0 +1,17 @@
+version: '2'
+services:
+  app:
+    image: sunrise
+    expose:
+      - 8082
+    ports:
+      - 8082:8082
+    links:
+      - zipkin
+
+  zipkin:
+    image: openzipkin/zipkin
+    expose:
+      - 9411
+    ports:
+      - 9411:9411
