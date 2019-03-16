@@ -8,7 +8,7 @@ ENV GRADLE_USER_HOME=/tmp
 USER root
 COPY . /usr/src/sunrise
 WORKDIR /usr/src/sunrise
-RUN gradle build --info --stacktrace
+RUN --mount=type=cache,target=/tmp gradle build -Djava.io.tmpdir=/tmp --info --stacktrace
 ##################################################
 ##################################################
 
