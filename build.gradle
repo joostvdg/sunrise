@@ -17,6 +17,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
+    maven { url "https://jitpack.io" }
 }
 
 dependencyManagement {
@@ -29,6 +30,8 @@ dependencies {
     annotationProcessor "io.micronaut:micronaut-inject-java"
     annotationProcessor "io.micronaut:micronaut-validation"
 
+    compile 'com.github.joostvdg:SunCalc-Java:0.0.1'
+    
     // GIT commit info
     compile "io.micronaut:micronaut-management"
 
