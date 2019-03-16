@@ -4,16 +4,6 @@ micronaut:
         name: sunrise
     server:
         port: 8082
----
-tracing:
-  zipkin:
-    enabled: true
-    http:
-      url: http://zipkin:9411
-    sampler:
-      probability: 1
----
-micronaut:
     metrics:
         enabled: true
         export:
@@ -21,8 +11,6 @@ micronaut:
                 enabled: true
                 step: PT1M
                 descriptions: true
-
----
 endpoints:
     info:
         enabled: true
@@ -30,3 +18,12 @@ endpoints:
     health:
         enabled: true
         sensitive: false
+tracing:
+  zipkin:
+    enabled: true
+    http:
+      url: http://zipkin:9411
+    sampler:
+      probability: 1
+
+
